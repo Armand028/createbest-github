@@ -83,6 +83,7 @@
         android:layout_height="59dp"
         android:ems="10"
         android:inputType="textEmailAddress"
+        tools:ignore="SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="147dp"
         tools:layout_editor_absoluteY="289dp" />
 
