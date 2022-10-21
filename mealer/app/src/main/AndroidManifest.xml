@@ -13,14 +13,14 @@
         android:theme="@style/Theme.MealerApp"
         tools:targetApi="31">
         <activity
-            android:name=".WelcomepageCookActivity"
+            android:name=".WelcomeCookActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".WelcomepageClientActivity"
+            android:name=".WelcomeClientActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -48,7 +48,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Admin_Welcomepage"
+            android:name=".WelcomeAdminActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
