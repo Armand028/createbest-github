@@ -7,19 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private  TextView signUp;
+public class WelcomeCookActivity extends AppCompatActivity implements View.OnClickListener {
+    private TextView logOut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        signUp = (TextView) findViewById(R.id.signUpBttn);
-        signUp.setOnClickListener(this);
+        setContentView(R.layout.welcomepage_cook);
+        logOut = (TextView) findViewById(R.id.logout_btn);
+        logOut.setOnClickListener(this);
     }
-    public void onClick(View view){
-        if(view.getId()==R.id.signUpBttn){
-            startActivity(new Intent(this, CookersignupPageActivity.class));
+
+    public void onClick(View view) {
+        if (view.getId() == R.id.signUpBttn) {
+            startActivity(new Intent(this, MainActivity.class));
         }
     }
 
