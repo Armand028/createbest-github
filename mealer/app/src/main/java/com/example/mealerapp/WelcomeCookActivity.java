@@ -19,7 +19,7 @@ public class WelcomeCookActivity extends AppCompatActivity implements View.OnCli
     }
 
     public void onClick(View view) {
-        if (view.getId() == R.id.signUpBttn) {
+        if (view.getId() == R.id.signUpBttn1) {
             startActivity(new Intent(this, MainActivity.class));
         }
     }

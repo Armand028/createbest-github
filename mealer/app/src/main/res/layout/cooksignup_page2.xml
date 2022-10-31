@@ -28,7 +28,7 @@
                 android:id="@+id/sigupText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sign_up_as_a_cook"
+                android:text="Cooker"
                 android:textAlignment="center"
                 android:textColor="@color/purple"
                 android:textSize="36sp"
@@ -45,7 +45,7 @@
 
 
             <EditText
-                android:id="@+id/confirm_password"
+                android:id="@+id/confirm_password1"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
@@ -70,5 +70,12 @@
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/Continue_Btn"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:textColor="#ABBC0B" />
 
 </LinearLayout>

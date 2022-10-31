@@ -2,24 +2,41 @@ package com.example.mealerapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private  TextView signUp;
+import com.google.firebase.auth.FirebaseAuth;
 
-    @Override
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    private  TextView signUp,logOut;
+    private EditText editTextemail, editTextPassword;
+    private FirebaseAuth mAuth;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        signUp = (TextView) findViewById(R.id.signUpBttn);
+        signUp = (Button) findViewById(R.id.signUpBttn1);
         signUp.setOnClickListener(this);
+        logOut=(Button) findViewById(R.id.loginButton);
+        logOut.setOnClickListener(this);
+        editTextemail = findViewById(R.id.username);
+        editTextPassword = (EditText) findViewById(R.id.SignInPassword);
+        mAuth = FirebaseAuth.getInstance();
     }
     public void onClick(View view){
-        if(view.getId()==R.id.signUpBttn){
-            startActivity(new Intent(this, CookersignupPageActivity.class));
+        String MotDePasse = editTextPassword.getText().toString().trim();
+        String Adresse = editTextemail.getText().toString().trim();
+        if(view.getId()==R.id.signUpBttn1){
+            startActivity(new Intent(this, SignupasActivity.class));
+        }
+        if(view.getId()==R.id.loginButton){
+            if(MotDePasse.equals("Administrator23") && Adresse.equals("administrator23@gmail.com") ){
+            startActivity(new Intent(this, WelcomeAdminActivity.class));
+            }
         }
     }
 

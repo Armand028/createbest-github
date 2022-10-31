@@ -10,34 +10,26 @@
     android:gravity="center"
     android:background="@drawable/fonddecran"
     tools:context=".MainActivity">
+
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
+        android:layout_width="346dp"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
+        android:background="@drawable/custom_edittext"
         app:cardCornerRadius="30dp"
-        app:cardElevation="20dp"
-        android:background="@drawable/custom_edittext">
+        app:cardElevation="20dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
             android:padding="24dp">
 
-            <TextView
-                android:id="@+id/sigupText"
+            <EditText
+                android:id="@+id/Prenom1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sign_up_as_a_cook"
-                android:textAlignment="center"
-                android:textColor="@color/purple"
-                android:textSize="36sp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/firstname"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/custom_edittext"
                 android:hint="@string/enter_your_fisrt_name"
@@ -46,9 +38,9 @@
                 android:textColorHighlight="@color/cardview_dark_background" />
 
             <EditText
-                android:id="@+id/lastname"
+                android:id="@+id/Nom1"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/custom_edittext"
                 android:hint="@string/enter_your_last_name"
@@ -57,39 +49,42 @@
                 android:textColorHighlight="@color/cardview_dark_background" />
 
             <EditText
-                android:id="@+id/email"
+                android:id="@+id/AdresseCourriel1"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/custom_edittext"
                 android:hint="@string/e_mail"
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background" />
+
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/SignInPassword"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/custom_edittext"
                 android:hint="@string/password"
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background" />
+
             <EditText
-                android:id="@+id/confirm_password"
+                android:id="@+id/confirm_password1"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/custom_edittext"
                 android:hint="@string/confirm_the_password"
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background" />
+
             <EditText
                 android:id="@+id/address"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/custom_edittext"
                 android:hint="@string/your_residential_adress"
@@ -97,16 +92,18 @@
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background" />
 
-            <Button
-                android:id="@+id/signUpBttn"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="30dp"
-                android:backgroundTint="@color/purple"
-                android:text="@string/sign_up"
-                android:textSize="18sp"
-                app:cornerRadius="20dp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/signUpBttn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/sign_up"
+        android:textColor="#B7CA00"
+        android:textSize="20sp"
+        app:cornerRadius="20dp" />
 
 </LinearLayout>
